@@ -8,7 +8,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: #bcd0e0;
+  background: #ffe9d6;
   color: #1c1c1c;
   scroll-behavior: smooth;
 }
@@ -34,13 +34,13 @@ header {
 
 .nav-links a {
   text-decoration: none;
-  color: #3b3b3b;
+  color: #4a4a4a;
   font-weight: 500;
   transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-  color: #000;
+  color: #e68b3f;
 }
 
 /* Hero Section */
@@ -52,7 +52,7 @@ header {
   gap: 4rem;
   flex-wrap: wrap;
   text-align: left;
-  background: #bcd0e0;
+  background: #ffe9d6;
   padding: 2rem;
 }
 
@@ -71,7 +71,7 @@ header {
 
 .hero-content h2 {
   font-size: 1.1rem;
-  color: #4a4a4a;
+  color: #555;
   font-weight: 400;
   margin-bottom: 0.4rem;
 }
@@ -90,23 +90,40 @@ header {
   line-height: 1.6;
 }
 
+/* Buttons */
 .btn {
   display: inline-block;
-  background: white;
-  color: #111;
   padding: 0.8rem 1.6rem;
+  background: #e68b3f;
+  color: white;
   border-radius: 8px;
   font-weight: 500;
   text-decoration: none;
-  border: 1px solid #ccc;
+  border: none;
   transition: all 0.3s ease;
 }
 
 .btn:hover {
-  background: #f0f0f0;
+  background: #c6732e;
 }
 
-/* Section Styling */
+.btn-small {
+  display: inline-block;
+  margin-top: 0.8rem;
+  padding: 0.4rem 1rem;
+  background: #e68b3f;
+  color: white;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btn-small:hover {
+  background: #c6732e;
+}
+
+/* Sections */
 section {
   padding: 5rem 3rem;
   max-width: 1000px;
@@ -116,7 +133,7 @@ section {
 section h2 {
   font-size: 1.8rem;
   margin-bottom: 1.5rem;
-  color: #1e1e1e;
+  color: #d17842;
 }
 
 section p, ul {
@@ -128,153 +145,12 @@ ul li {
   margin-bottom: 0.8rem;
 }
 
-/* Project Grid */
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5rem;
-}
-
-.project-card {
-  background: white;
-  border-radius: 10px;
-  padding: 1rem;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-  transition: transform 0.2s;
-}
-
-.project-card:hover {
-  transform: translateY(-5px);
-}
-
-.project-card img {
-  width: 100%;
-  border-radius: 6px;
-  margin-bottom: 1rem;
-}
-
-.btn-small {
-  display: inline-block;
-  margin-top: 0.8rem;
-  padding: 0.4rem 1rem;
-  background: #0077b6;
-  color: white;
-  border-radius: 4px;
-  font-size: 0.85rem;
-  text-decoration: none;
-}
-
-/* Floating Glass Cards - Contact Section */
-#contact {
-  text-align: center;
-  padding: 6rem 2rem;
-  background: #bcd0e0;
-}
-
-#contact h2 {
-  font-size: 2rem;
-  margin-bottom: 1.2rem;
-  color: #111;
-}
-
-#contact p {
-  font-size: 1.1rem;
-  color: #333;
-  max-width: 600px;
-  margin: 0 auto 3rem;
-  line-height: 1.6;
-}
-
-.contact-cards {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 2rem;
-}
-
-.glass-card {
-  width: 150px;
-  height: 150px;
-  background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border-radius: 16px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
-}
-
-.glass-card:hover {
-  transform: translateY(-8px);
-  background: rgba(255, 255, 255, 0.25);
-  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
-}
-
-.glass-card img {
-  width: 45px;
-  height: 45px;
-  max-width: 45px;
-  max-height: 45px;
-  object-fit: contain;
-  margin-bottom: 0.8rem;
-  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
-}
-
-
-.glass-card span {
-  color: #111;
-  font-weight: 600;
-  font-size: 1rem;
-}
-
-footer {
-  text-align: center;
-  padding: 2rem;
-  color: #555;
-  font-size: 0.9rem;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  #hero {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .hero-content {
-    max-width: 90%;
-  }
-
-  .profile-pic {
-    width: 220px;
-    height: 220px;
-  }
-
-  .glass-card {
-    width: 130px;
-    height: 130px;
-  }
-}
-
-/* ===== Education Section ===== */
+/* Education Glass Cards */
 #education {
   text-align: center;
-  padding: 6rem 2rem;
-  background: #bcd0e0;
+  background: #fff4eb;
 }
 
-#education h2 {
-  font-size: 2rem;
-  color: #111;
-  margin-bottom: 3rem;
-}
-
-/* Grid layout for the two cards */
 .edu-grid {
   display: flex;
   justify-content: center;
@@ -282,12 +158,11 @@ footer {
   gap: 2rem;
 }
 
-/* Glass card design */
 .edu-card {
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(255, 248, 240, 0.3);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.4);
   border-radius: 16px;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
   width: 420px;
@@ -299,11 +174,10 @@ footer {
 
 .edu-card:hover {
   transform: translateY(-8px);
-  background: rgba(255, 255, 255, 0.25);
+  background: rgba(255, 248, 240, 0.45);
   box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
 }
 
-/* Headings */
 .edu-card h3 {
   font-size: 1.4rem;
   margin-bottom: 0.3rem;
@@ -315,14 +189,13 @@ footer {
   margin-bottom: 1.5rem;
 }
 
-/* Subsections */
 .edu-details {
   margin-bottom: 1.5rem;
 }
 
 .edu-details h4 {
   font-size: 1.05rem;
-  color: #0077b6;
+  color: #e68b3f;
   margin-bottom: 0.5rem;
 }
 
@@ -343,14 +216,111 @@ footer {
   content: "•";
   position: absolute;
   left: 0;
-  color: #0077b6;
+  color: #e68b3f;
   font-weight: bold;
 }
 
-/* Responsive layout */
-@media (max-width: 900px) {
+/* Project Cards */
+.project-card {
+  background: white;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: transform 0.2s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+/* Contact Glass Cards */
+#contact {
+  text-align: center;
+  padding: 6rem 2rem;
+  background: #fff4eb;
+}
+
+.contact-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.glass-card {
+  width: 150px;
+  height: 150px;
+  background: rgba(255, 248, 240, 0.3);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.glass-card:hover {
+  transform: translateY(-8px);
+  background: rgba(255, 248, 240, 0.45);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+}
+
+.glass-card img {
+  width: 45px;
+  height: 45px;
+  margin-bottom: 0.8rem;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+  object-fit: contain;
+}
+
+.glass-card span {
+  color: #111;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem;
+  color: #555;
+  font-size: 0.9rem;
+  background: #ffe9d6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  #hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-content {
+    max-width: 90%;
+  }
+
+  .profile-pic {
+    width: 220px;
+    height: 220px;
+  }
+
+  .glass-card {
+    width: 130px;
+    height: 130px;
+  }
+
   .edu-card {
     width: 90%;
   }
 }
-
