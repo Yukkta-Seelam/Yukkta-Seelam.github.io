@@ -218,9 +218,13 @@ ul li {
 .glass-card img {
   width: 45px;
   height: 45px;
+  max-width: 45px;
+  max-height: 45px;
+  object-fit: contain;
   margin-bottom: 0.8rem;
   filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
 }
+
 
 .glass-card span {
   color: #111;
