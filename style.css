@@ -148,14 +148,14 @@ ul li {
 /* Alternating section backgrounds */
 #hero,
 #education,
-#contact {
-  background: #bcd0e0;
+#projects {
+  background: #bcd0e0; /* Base soft blue */
 }
 
 #about,
 #experience,
-#projects {
-  background: #d8e3ed;
+#contact {
+  background: #eef5fa; /* Very light bluish-white */
 }
 
 /* Education Glass Cards */
