@@ -149,13 +149,13 @@ ul li {
 #hero,
 #education,
 #projects {
-  background: #bcd0e0; /* Base soft blue */
+  background: #bcd0e0; /* Soft blue */
 }
 
 #about,
 #experience,
 #contact {
-  background: #eef5fa; /* Very light bluish-white */
+  background: #ffffff; /* Clean white */
 }
 
 /* Education Glass Cards */
