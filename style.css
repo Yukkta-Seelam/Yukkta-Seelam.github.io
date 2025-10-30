@@ -252,26 +252,43 @@ ul li {
 }
 
 /* Contact Glass Cards */
+/* Contact Section (Compact Version) */
 #contact {
   text-align: center;
-  padding: 6rem 2rem;
+  padding: 3rem 1rem; /* Reduced vertical padding */
+  background: #ffffff;
 }
 
+#contact h2 {
+  font-size: 1.6rem;
+  color: #0077b6;
+  margin-bottom: 1rem;
+}
+
+#contact p {
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* Smaller contact cards */
 .contact-cards {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 1.5rem; /* slightly closer */
 }
 
 .glass-card {
-  width: 150px;
-  height: 150px;
+  width: 120px; /* smaller width */
+  height: 120px; /* smaller height */
   background: rgba(255, 255, 255, 0.25);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border-radius: 16px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.4);
   display: flex;
   flex-direction: column;
@@ -282,15 +299,15 @@ ul li {
 }
 
 .glass-card:hover {
-  transform: translateY(-8px);
+  transform: translateY(-6px);
   background: rgba(255, 255, 255, 0.4);
-  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
 .glass-card img {
-  width: 45px;
-  height: 45px;
-  margin-bottom: 0.8rem;
+  width: 35px; /* smaller icons */
+  height: 35px;
+  margin-bottom: 0.5rem;
   filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
   object-fit: contain;
 }
@@ -298,8 +315,9 @@ ul li {
 .glass-card span {
   color: #111;
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
+
 
 /* Footer */
 footer {
