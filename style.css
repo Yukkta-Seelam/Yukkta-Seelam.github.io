@@ -8,7 +8,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: #ffe9d6;
+  background: #bcd0e0;
   color: #1c1c1c;
   scroll-behavior: smooth;
 }
@@ -40,7 +40,7 @@ header {
 }
 
 .nav-links a:hover {
-  color: #e68b3f;
+  color: #0077b6;
 }
 
 /* Hero Section */
@@ -52,7 +52,7 @@ header {
   gap: 4rem;
   flex-wrap: wrap;
   text-align: left;
-  background: #ffe9d6;
+  background: #bcd0e0;
   padding: 2rem;
 }
 
@@ -94,7 +94,7 @@ header {
 .btn {
   display: inline-block;
   padding: 0.8rem 1.6rem;
-  background: #e68b3f;
+  background: #0077b6;
   color: white;
   border-radius: 8px;
   font-weight: 500;
@@ -104,14 +104,14 @@ header {
 }
 
 .btn:hover {
-  background: #c6732e;
+  background: #005f8a;
 }
 
 .btn-small {
   display: inline-block;
   margin-top: 0.8rem;
   padding: 0.4rem 1rem;
-  background: #e68b3f;
+  background: #0077b6;
   color: white;
   border-radius: 4px;
   font-size: 0.85rem;
@@ -120,7 +120,7 @@ header {
 }
 
 .btn-small:hover {
-  background: #c6732e;
+  background: #005f8a;
 }
 
 /* Sections */
@@ -133,7 +133,7 @@ section {
 section h2 {
   font-size: 1.8rem;
   margin-bottom: 1.5rem;
-  color: #d17842;
+  color: #0077b6;
 }
 
 section p, ul {
@@ -145,10 +145,22 @@ ul li {
   margin-bottom: 0.8rem;
 }
 
+/* Alternating section backgrounds */
+#hero,
+#education,
+#contact {
+  background: #bcd0e0;
+}
+
+#about,
+#experience,
+#projects {
+  background: #d8e3ed;
+}
+
 /* Education Glass Cards */
 #education {
   text-align: center;
-  background: #fff4eb;
 }
 
 .edu-grid {
@@ -159,7 +171,7 @@ ul li {
 }
 
 .edu-card {
-  background: rgba(255, 248, 240, 0.3);
+  background: rgba(255, 255, 255, 0.25);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border: 1px solid rgba(255, 255, 255, 0.4);
@@ -174,7 +186,7 @@ ul li {
 
 .edu-card:hover {
   transform: translateY(-8px);
-  background: rgba(255, 248, 240, 0.45);
+  background: rgba(255, 255, 255, 0.35);
   box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
 }
 
@@ -195,7 +207,7 @@ ul li {
 
 .edu-details h4 {
   font-size: 1.05rem;
-  color: #e68b3f;
+  color: #0077b6;
   margin-bottom: 0.5rem;
 }
 
@@ -216,7 +228,7 @@ ul li {
   content: "•";
   position: absolute;
   left: 0;
-  color: #e68b3f;
+  color: #0077b6;
   font-weight: bold;
 }
 
@@ -243,7 +255,6 @@ ul li {
 #contact {
   text-align: center;
   padding: 6rem 2rem;
-  background: #fff4eb;
 }
 
 .contact-cards {
@@ -256,7 +267,7 @@ ul li {
 .glass-card {
   width: 150px;
   height: 150px;
-  background: rgba(255, 248, 240, 0.3);
+  background: rgba(255, 255, 255, 0.25);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-radius: 16px;
@@ -272,7 +283,7 @@ ul li {
 
 .glass-card:hover {
   transform: translateY(-8px);
-  background: rgba(255, 248, 240, 0.45);
+  background: rgba(255, 255, 255, 0.4);
   box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
 }
 
@@ -296,7 +307,7 @@ footer {
   padding: 2rem;
   color: #555;
   font-size: 0.9rem;
-  background: #ffe9d6;
+  background: #bcd0e0;
 }
 
 /* Responsive */
