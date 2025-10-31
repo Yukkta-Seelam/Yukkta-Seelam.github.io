@@ -159,77 +159,104 @@ ul li {
 }
 
 /* Education Glass Cards */
-#education {
+/* Experience Section */
+#experience {
+  background: #ffffff;
   text-align: center;
 }
 
-.edu-grid {
+#experience h2 {
+  color: #0077b6;
+  margin-bottom: 1rem;
+}
+
+.section-subtitle {
+  color: #5a5a5a;
+  font-size: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.exp-grid {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 2rem;
 }
 
-.edu-card {
+/* Glass Cards */
+.exp-card {
   background: rgba(255, 255, 255, 0.25);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.4);
   border-radius: 16px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-  width: 420px;
-  padding: 2rem;
+  padding: 1.8rem 2rem;
+  width: 380px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.4);
   text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.exp-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Card Content */
+.exp-card h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
   color: #111;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
-}
-
-.edu-card:hover {
-  transform: translateY(-8px);
-  background: rgba(255, 255, 255, 0.35);
-  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
-}
-
-.edu-card h3 {
-  font-size: 1.4rem;
   margin-bottom: 0.3rem;
 }
 
-.edu-card .degree {
-  font-size: 1rem;
+.exp-company {
+  color: #0077b6;
+  font-weight: 500;
+  margin-bottom: 0.6rem;
+}
+
+.exp-desc {
   color: #333;
-  margin-bottom: 1.5rem;
-}
-
-.edu-details {
-  margin-bottom: 1.5rem;
-}
-
-.edu-details h4 {
-  font-size: 1.05rem;
-  color: #0077b6;
-  margin-bottom: 0.5rem;
-}
-
-.edu-details ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-.edu-details li {
   font-size: 0.95rem;
-  color: #222;
-  margin-bottom: 0.4rem;
-  padding-left: 1rem;
-  position: relative;
+  line-height: 1.6;
+  margin-bottom: 0.8rem;
 }
 
-.edu-details li::before {
-  content: "•";
-  position: absolute;
-  left: 0;
+.exp-date {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+/* Tags */
+.exp-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.exp-tags span {
+  background: #eef5fa;
   color: #0077b6;
-  font-weight: bold;
+  border-radius: 12px;
+  padding: 0.3rem 0.7rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  border: 1px solid #d7e8f0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .exp-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .exp-card {
+    width: 90%;
+  }
 }
 
 /* Project Cards */
@@ -282,8 +309,8 @@ ul li {
 }
 
 .glass-card {
-  width: 20px; /* smaller width */
-  height: 20px; /* smaller height */
+  width: 35px; /* smaller width */
+  height: 35px; /* smaller height */
   background: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
