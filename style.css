@@ -158,6 +158,80 @@ ul li {
   background: #ffffff; /* Clean white */
 }
 
+/* Education Glass Cards */
+#education {
+  text-align: center;
+}
+
+.edu-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.edu-card {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  width: 420px;
+  padding: 2rem;
+  text-align: left;
+  color: #111;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.edu-card:hover {
+  transform: translateY(-8px);
+  background: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+}
+
+.edu-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.3rem;
+}
+
+.edu-card .degree {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.edu-details {
+  margin-bottom: 1.5rem;
+}
+
+.edu-details h4 {
+  font-size: 1.05rem;
+  color: #0077b6;
+  margin-bottom: 0.5rem;
+}
+
+.edu-details ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.edu-details li {
+  font-size: 0.95rem;
+  color: #222;
+  margin-bottom: 0.4rem;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.edu-details li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #0077b6;
+  font-weight: bold;
+}
+
 /* Experience Section */
 #experience {
   background: #fff; /* white section to alternate with blue */
