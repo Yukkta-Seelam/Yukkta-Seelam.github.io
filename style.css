@@ -282,8 +282,8 @@ ul li {
 }
 
 .glass-card {
-  width: 60px; /* smaller width */
-  height: 60px; /* smaller height */
+  width: 20px; /* smaller width */
+  height: 20px; /* smaller height */
   background: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
