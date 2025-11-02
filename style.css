@@ -66,11 +66,11 @@ header {
 } */
 
 .profile-pic {
-  width: 280px;
-  height: 280px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
   object-fit: cover;
-  padding: 6px;
+  padding: 7px;
   background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);
   box-shadow: 0 4px 25px rgba(0, 0, 0, 0.15);
   animation: float 6s ease-in-out infinite;
