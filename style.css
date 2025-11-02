@@ -73,6 +73,12 @@ header {
   padding: 6px;
   background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);
   box-shadow: 0 4px 25px rgba(0, 0, 0, 0.15);
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
 }
 
 .hero-content {
